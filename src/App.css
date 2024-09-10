@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.App {
+  display: flex;
+  font-family: "Kanit", "Arial";
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  margin-right: 20px;
+  font-family: "Kanit", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.navbar {
+  text-align: center;
+  width: auto;
+  border-top: 3px solid rgb(0, 0, 0);
+  border-radius: 150px;
+  border-left: 15px solid black;
+  border-bottom: 3px solid black;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-right: 15px solid black;
+}
+
+.logo--placeholder {
+  background-color: #80a4ec;
+  border: 3px solid rgb(0, 0, 0);
+  border-top: 5px solid black;
+  border-left: 10px solid black;
+  border-bottom: 7px solid black;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}
+
+li {
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  background: transparent;
+  border: none;
+  color: #000000; /* Set text color */
+  margin-right: 40px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+li:after {
+  content: ''; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 3px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: rgb(1, 166, 255); /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out; /* Transition effect for the underline */
+  font-weight: bold;
+}
+
+li:hover:after {
+  transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left; /* Set transform origin */
+}
+
+.cover--letter--text {
+  background-color: #cdcdcd;
+  width: 400px;
+  border-radius: 25px;
+  height: 250px;
+  margin-top: 25px;
+  border: 2px solid black;
+}
+
+.resume--text {
+  background-color: #cdcdcd;
+  width: 400px;
+  border-radius: 25px;
+  height: 250px;
+  margin-top: 25px;
+  border: 2px solid black;
+}
+
+.top--div {
+  display: flex;
+}
+
+.resume {
+  margin: 0px 100px;
+}
+
+
+.resume {
+  margin: 0px 50px;
+}
+
+.cover--letter {
+  margin: 0px 50px;
+}
+
+.webapps--list {
+  display: flex;
+}
+
+.project {
+  width: 250px;
+  height: 250px;
+  margin: 10px 50px;
+  background-color: #80a4ec;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.design {
+  width: 250px;
+  height: 250px;
+  margin: 10px 50px;
+  background-color: #80a4ec;
+  border-radius: 25px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.designs--list {
+  display: flex;
+}
+
