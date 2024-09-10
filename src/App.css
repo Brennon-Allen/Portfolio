@@ -52,6 +52,7 @@ strong {
 profile--image {
   border: 5px solid black;
   margin-top: 25px;
+  border-radius: 50%;
 }
 
 li {
@@ -147,3 +148,20 @@ li:hover:after {
   display: flex;
 }
 
+.header--name {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.header--number {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.header--email {
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+
+.header--info {
+  font-size: 1.2em;
+  padding: 0;
+}
