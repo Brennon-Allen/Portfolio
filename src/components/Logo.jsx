@@ -1,4 +1,4 @@
-import ProfilePicture from '../assets/ProfilePicture.png'
+import ProfilePicture from '../assets/ProfilePicture'
 
 export default function Logo(){
     return (

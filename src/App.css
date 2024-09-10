@@ -50,15 +50,7 @@ strong {
 }
 
 img {
-  border: 3px solid rgb(0, 0, 0);
-  border-top: 5px solid black;
-  border-left: 10px solid black;
-  border-bottom: 7px solid black;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  margin: 30px;
-  object-fit: cover;
+  border: 5px solid black;
 }
 
 li {
