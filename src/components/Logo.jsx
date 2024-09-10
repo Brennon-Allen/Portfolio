@@ -1,9 +1,9 @@
-import '../assets/ProfilePicture.png'
+import ProfilePicture from '../assets/ProfilePicture.png'
 
 export default function Logo(){
     return (
         <div className="logo--placeholder">
-            <img src="../assets/ProfilePicture.png">
+            <img src={ProfilePicture}/>
         </div>
     )
 }
