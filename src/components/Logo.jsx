@@ -1,7 +1,9 @@
+import '../assets/ProfilePicture.png'
+
 export default function Logo(){
     return (
         <div className="logo--placeholder">
-            Profile picture goes here
+            <img src="../assets/ProfilePicture.png">
         </div>
     )
 }
