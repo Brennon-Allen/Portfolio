@@ -171,6 +171,8 @@ margin-bottom: 50px;
 .view--button {
   background-color: #000000;
   color: white;
+  margin-top: 0px;
+  height: 35px;
 }
 
 .resume--snip {
