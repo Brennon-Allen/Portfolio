@@ -13,8 +13,10 @@ function App() {
       <Logo />
       <HeaderInfo />
       <Navbar />
+      <CoverLetter />
+
       <div className="top--div">
-        <CoverLetter />
+        {/* <CoverLetter /> */}
         <Resume />
       </div>
       <WebApps />
