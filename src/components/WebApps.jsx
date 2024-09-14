@@ -1,11 +1,12 @@
 export default function WebApps(){
     return (
         <div className="webapps">
-            <h1>Web Applications</h1>
-            <div className="webapps--list">
-                <div className="project"></div>
-                <div className="project"></div>
-                <div className="project"></div>
+            <h1>Overview</h1>
+            <div className="webappsList">
+                <h1 className="stat--heading">5</h1>
+                <p className="projects--text">PROJECTS COMPLETED</p>
+                <h1 className="stat--heading">2</h1>
+                <p className="projects--text">ONGOING PROJECTS</p>
             </div>
         </div>
     )

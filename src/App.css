@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 .App {
   display: flex;
   font-family: "Kanit", "Arial";
@@ -47,10 +48,11 @@ strong {
   margin: 30px;
 } */
 
-profile--image {
-  border: 5px solid black;
-  margin-top: 25px;
-  border-radius: 50%;
+.profile--image {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  border: 7px double black;
 }
 
 li {
@@ -72,7 +74,7 @@ li:after {
   height: 3px; /* Height of the underline */
   bottom: 0; /* Align to bottom */
   left: 0; /* Align to left */
-  background-color: rgb(1, 166, 255); /* Background color of the underline */
+  background-color: #007bff; /* Background color of the underline */
   transform-origin: bottom right; /* Set transform origin */
   transition: transform 0.25s ease-out; /* Transition effect for the underline */
   font-weight: bold;
@@ -92,12 +94,10 @@ li:hover:after {
 }
 
 .resume--text {
-  background-color: #cdcdcd;
-  width: 400px;
-  border-radius: 25px;
-  height: 250px;
-  margin-top: 25px;
-  border: 2px solid black;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your requirements */
+  margin: 0 auto; /* Centers the container horizontally */
 }
 
 .top--div {
@@ -110,8 +110,10 @@ li:hover:after {
 
 
 .resume {
-margin-top: 10px;
-margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers container horizontally */
 }
 
 .cover--letter {
@@ -169,14 +171,73 @@ margin-bottom: 50px;
 }
 
 .view--button {
-  background-color: #000000;
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.view--button:hover {
+  background-color: darkblue;
+  border: 2px solid black;
   color: white;
-  margin-top: 0px;
-  height: 35px;
+}
+
+.black--tint {
+  background-color: #cdcdcd;
+  width: 400px;
+  border-radius: 25px;
+  height: 250px;
+  margin-top: 25px;
+  border: 2px solid black;
+  opacity: 50%;
 }
 
 .resume--snip {
-  width: 400px;
-  height: 250px;
+  width: 450px;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
   border-radius: 25px;
+  border: 2px solid black;
+}
+
+.popout {
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.projects--text {
+  margin-top: -35px;
+}
+
+
+.stat--heading {
+  font-size: 56px;
+  color: #007bff;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Outline color */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* Styles for mobile devices */
+  .App {
+    width: 100%;
+  }
 }
