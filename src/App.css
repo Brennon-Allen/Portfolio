@@ -243,7 +243,7 @@ li:hover:after {
   width: 90px;
   height: 90px;
   background-color: coral;
-  margin-left: 60px;
+  margin-left: auto;
   margin-bottom: 50px;
   -webkit-animation: squareToCircle 2s 1s infinite alternate;
 }
