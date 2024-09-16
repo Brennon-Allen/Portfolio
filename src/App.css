@@ -243,7 +243,7 @@ li:hover:after {
   width: 90px;
   height: 90px;
   background-color: coral;
-  margin-left: auto;
+  margin-left: 50px;
   margin-bottom: 50px;
   -webkit-animation: squareToCircle 2s 1s infinite alternate;
 }
@@ -252,7 +252,7 @@ li:hover:after {
     0% {
       border-radius: 50% 50% 50% 50%;
       background: rgb(7, 7, 8);
-      transform: rotate(0deg);
+      transform: rotate(-45deg);
     }
     25% {
       border-radius: 50% 50% 50% 50%;
@@ -271,7 +271,7 @@ li:hover:after {
     }
     100% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(63, 154, 245);
+      background: rgb(63, 127, 245);
       transform: rotate(45deg);
     }
 }
