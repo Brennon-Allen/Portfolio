@@ -172,7 +172,7 @@ li:hover:after {
 
 .view--button {
   position: absolute;
-  top: 245px;
+  top: 235px;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
@@ -206,10 +206,11 @@ li:hover:after {
 
 .resume--snip {
   width: 400px;
-  height: auto; /* Maintain aspect ratio */
+  height: 250px; /* Maintain aspect ratio */
   display: block;
   border-radius: 25px;
   border: 2px solid black;
+  filter: sepia(0%) saturate(100%) brightness(75%) hue-rotate(330deg);
 }
 
 .popout {

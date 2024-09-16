@@ -12,14 +12,12 @@ function App() {
     <div className="App">
       <Logo />
       <HeaderInfo />
-      <Navbar />
-      <CoverLetter />
-
+      <WebApps />
       <div className="top--div">
+        
         {/* <CoverLetter /> */}
         <Resume />
       </div>
-      <WebApps />
       <Designs />
     </div>
   );
