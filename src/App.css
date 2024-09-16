@@ -226,13 +226,8 @@ li:hover:after {
 
 .stat--heading {
   font-size: 56px;
-  color: rgb(247, 247, 247);
-
-  text-shadow: 
-    -5px 3px 0 #00a6ff,  
-     -10px 7px 0 #121212,
-    -15px  8px 0 #bfff00,
-     -1px  1px 0 #000; /* Outline color */
+  color: rgb(255, 255, 255);
+  border-radius: 100px;
 }
 
 
@@ -242,4 +237,41 @@ li:hover:after {
   .App {
     width: 100%;
   }
+}
+
+.animated--box {
+  width: 90px;
+  height: 90px;
+  background-color: coral;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  -webkit-animation: squareToCircle 2s 1s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(13, 200, 210);
+      transform: rotate(-25deg);
+    }
+    25% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(11, 112, 214);
+      transform: rotate(0deg);
+    }
+    50% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(8, 210, 213);
+      transform: rotate(45deg);
+    }
+    75% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(10, 100, 136);
+      transform: rotate(-90deg);
+    }
+    100% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(6, 40, 62);
+      transform: rotate(0deg);
+    }
 }
