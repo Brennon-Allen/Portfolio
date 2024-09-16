@@ -256,22 +256,22 @@ li:hover:after {
     }
     25% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(11, 112, 214);
+      background: rgb(28, 142, 255);
       transform: rotate(-45deg);
     }
     50% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(63, 154, 245);
+      background: rgb(41, 79, 117);
       transform: rotate(45deg);
     }
     75% {
       border-radius: 50% 50% 50% 50%;
       background: rgb(15, 18, 21);
-      transform: rotate(-25deg);
+      transform: rotate(-45deg);
     }
     100% {
       border-radius: 50% 50% 50% 50%;
       background: rgb(63, 154, 245);
-      transform: rotate(180deg);
+      transform: rotate(45deg);
     }
 }
