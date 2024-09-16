@@ -10,15 +10,18 @@ import HeaderInfo from './components/HeaderInfo'
 function App() {
   return (
     <div className="App">
-      <Logo />
-      <HeaderInfo />
-      <WebApps />
-      <div className="top--div">
-        
-        {/* <CoverLetter /> */}
-        <Resume />
-      </div>
-      <Designs />
+      <img className="background--image" src="src/assets/Binary-Background.png"/>
+      <div className='comp--container'>
+        <Logo />
+        <HeaderInfo />
+        <WebApps />
+        <div className="top--div">
+
+          {/* <CoverLetter /> */}
+          <Resume />
+        </div>
+        <Designs />
+        </div>
     </div>
   );
 }
