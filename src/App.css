@@ -220,7 +220,8 @@ li:hover:after {
 }
 
 .projects--text {
-  margin-top: -35px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 
@@ -230,8 +231,6 @@ li:hover:after {
   border-radius: 100px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
   /* Styles for mobile devices */
   .App {
@@ -239,39 +238,26 @@ li:hover:after {
   }
 }
 
-.animated--box {
-  width: 90px;
-  height: 90px;
-  background-color: coral;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  -webkit-animation: squareToCircle 2s 1s infinite alternate;
+.typewriter h1 {
+  width: 25px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid rgb(104, 104, 104); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(1, end),
+    blink-caret .75s step-end infinite;
 }
 
-@-webkit-keyframes squareToCircle {
-    0% {
-      border-radius: 50% 50% 50% 50%;
-      background: rgb(7, 7, 8);
-      transform: rotate(-45deg);
-    }
-    25% {
-      border-radius: 50% 50% 50% 50%;
-      background: rgb(28, 142, 255);
-      transform: rotate(-45deg);
-    }
-    50% {
-      border-radius: 50% 50% 50% 50%;
-      background: rgb(41, 79, 117);
-      transform: rotate(45deg);
-    }
-    75% {
-      border-radius: 50% 50% 50% 50%;
-      background: rgb(15, 18, 21);
-      transform: rotate(-45deg);
-    }
-    100% {
-      border-radius: 50% 50% 50% 50%;
-      background: rgb(63, 127, 245);
-      transform: rotate(45deg);
-    }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(117, 117, 117); }
 }
