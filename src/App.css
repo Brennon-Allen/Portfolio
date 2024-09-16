@@ -251,27 +251,27 @@ li:hover:after {
 @-webkit-keyframes squareToCircle {
     0% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(13, 200, 210);
-      transform: rotate(-25deg);
+      background: rgb(7, 7, 8);
+      transform: rotate(0deg);
     }
     25% {
       border-radius: 50% 50% 50% 50%;
       background: rgb(11, 112, 214);
-      transform: rotate(0deg);
+      transform: rotate(-45deg);
     }
     50% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(8, 210, 213);
+      background: rgb(63, 154, 245);
       transform: rotate(45deg);
     }
     75% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(10, 100, 136);
-      transform: rotate(-90deg);
+      background: rgb(15, 18, 21);
+      transform: rotate(-25deg);
     }
     100% {
       border-radius: 50% 50% 50% 50%;
-      background: rgb(6, 40, 62);
-      transform: rotate(0deg);
+      background: rgb(63, 154, 245);
+      transform: rotate(180deg);
     }
 }
