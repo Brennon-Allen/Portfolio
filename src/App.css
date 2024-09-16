@@ -51,8 +51,29 @@ strong {
 .profile--image {
   width: 250px;
   height: 250px;
-  border-radius: 150px;
-  border: 7px double black;
+  margin-top: 20px;
+  border: 8px solid;
+	position: relative;
+  background: linear-gradient(to left, turquoise, greenyellow);
+
+
+	/*The background extends to the outside edge of the padding. No background is drawn beneath the border.*/
+	background-clip: padding-box;
+
+	border: solid 8px;
+	border-radius: 150px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -8px; /* same as border width */
+		border-radius: inherit; /* inherit container box's radius */
+	}
 }
 
 li {
@@ -172,7 +193,7 @@ li:hover:after {
 
 .view--button {
   position: absolute;
-  top: 235px;
+  top: 225px;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
@@ -190,18 +211,8 @@ li:hover:after {
 
 .view--button:hover {
   background-color: darkblue;
-  border: 2px solid black;
+  border: 2px solid lightskyblue;
   color: white;
-}
-
-.black--tint {
-  background-color: #cdcdcd;
-  width: 400px;
-  border-radius: 25px;
-  height: 250px;
-  margin-top: 25px;
-  border: 2px solid black;
-  opacity: 50%;
 }
 
 .resume--snip {
@@ -210,7 +221,7 @@ li:hover:after {
   display: block;
   border-radius: 25px;
   border: 2px solid black;
-  filter: sepia(0%) saturate(100%) brightness(75%) hue-rotate(330deg);
+  filter: sepia(0%) saturate(100%) brightness(90%) hue-rotate(330deg);
 }
 
 .popout {
@@ -230,13 +241,6 @@ li:hover:after {
   font-size: 56px;
   color: rgb(255, 255, 255);
   border-radius: 100px;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Styles for mobile devices */
-  .App {
-    width: 100%;
-  }
 }
 
 .typewriter h1 {
@@ -261,4 +265,15 @@ li:hover:after {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(117, 117, 117); }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  /* ruleset for 480px - 600px */
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .resume--snip {
+    width: 100%;
+  }
 }
