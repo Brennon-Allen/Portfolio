@@ -144,7 +144,7 @@ li:hover:after {
 .resume {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Adjust width as needed */
+  max-width: 550px; /* Adjust width as needed */
   margin: 0 auto; /* Centers container horizontally */
 }
 
@@ -159,7 +159,7 @@ li:hover:after {
 .stat--box {
   display: inline-block;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .project {
