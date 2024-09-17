@@ -7,7 +7,9 @@
   max-width: 1000px;
   max-height: 500px;
   top: 0;
-  opacity: 75%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  opacity: 15%;
 }
 
 .App {
@@ -152,6 +154,12 @@ li:hover:after {
 
 .webapps--list {
   display: flex;
+}
+
+.stat--box {
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .project {
