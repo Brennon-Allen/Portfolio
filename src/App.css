@@ -218,6 +218,7 @@ li:hover:after {
   outline: none;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
 
