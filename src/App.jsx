@@ -10,7 +10,7 @@ import HeaderInfo from './components/HeaderInfo'
 function App() {
   return (
     <div className="App">
-      <img className="background--image" src="src/assets/Binary-Background.png"/>
+      <img className="background--image" src="../assets/Binary-Background.png"/>
       <div className='comp--container'>
         <Logo />
         <HeaderInfo />

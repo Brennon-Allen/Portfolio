@@ -11,7 +11,7 @@ export default function Resume(){
 
     const handleDownload = () => {
       // URL of the resume file
-      const resumeUrl = 'src/assets/09-14-24 Brennon Allen Tech sume.pdf'
+      const resumeUrl = '../assets/09-14-24 Brennon Allen Tech sume.pdf'
       
       // Creating an anchor element and triggering download
       const link = document.createElement('a')
